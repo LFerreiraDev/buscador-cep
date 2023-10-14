@@ -49,17 +49,17 @@ function App(){
         </button>
       </div>
 
-      
+      {Object.keys(cep).length > 0 && (
 
-      <main className='main'>
-        <h2>CEP: {cep.cep}</h2>
+        <main className='main'>
+          <h2>CEP: {cep.cep}</h2>
 
-        <spam>{cep.logradouro}</spam>
-        <spam>{cep.bairro}</spam>
-        <spam>{cep.localidade} - {cep.uf}</spam>
+          <spam>{cep.logradouro}</spam>
+          <spam>{cep.bairro}</spam>
+          <spam>{cep.localidade} - {cep.uf}</spam>
 
-
-      </main>
+        </main>
+      )}
 
     </div>
 
